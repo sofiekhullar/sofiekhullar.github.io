@@ -82,6 +82,11 @@
 				mesh = new THREE.Mesh( new THREE.BoxGeometry( 300, 300, 300, 7, 7, 7 ), new THREE.MeshFaceMaterial( materials ) );
 				mesh.scale.x = - 1;
 				scene.add( mesh );
+                                
+                                //SFÄR 
+                                var sphere = new THREE.Mesh(new THREE.SphereGeometry(150, 100, 100), new THREE.MeshNormalMaterial());
+                                sphere.overdraw = true;
+                                scene.add(sphere);
 
 				for ( var i = 0, l = mesh.geometry.vertices.length; i < l; i ++ ) {
 
