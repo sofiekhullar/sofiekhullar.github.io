@@ -1,14 +1,154 @@
-<html>
-	<head>
-		<title>Glitter</title>
-		<style>
-			body { margin: 0; }
-			canvas { width: 100%; height: 100% }
-		</style>
-	</head>
-	<body>
-		<script src="js/three.min.js"></script>
-		<script src="object.js"></script>
-		<script src="calculate.js"></script>
-	</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sofie Khullar</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" href="place.jpg" sizes="16x16">
+
+</head>
+<body>
+
+<!-- Navigation panel -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="bs-js-navbar-scrollspy">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+            <i class="sr-only">Toggle navigation</i>
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+          </button>
+          <a class="navbar-brand" href="#myPage">Sofie Khullar</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">Om</a></li> 
+          <li><a href="#portfolio">Projekt</a></li>
+          <li><a href="#commitments">Engagemang</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--Start -->
+    <div id="myPage" class="container">
+        <div class="container-fluid text-center block1">
+            <img src="sofie_1.jpeg" class="img-responsive img-circle" style="display:inline" alt="sofie">
+            <h3>Sofie Khullar</h3>
+        </div>
+
+        <!--Om mig -->
+        <div id="about" class="container-fluid text-center block">
+            <h3>Vem är jag? </h3>
+             <p>HEJ! Jag heter Sofie Khullar och är 23 år gammal och jag studerar mitt tredje år på <a href="http://www.medieteknik.nu/se/" target="_blank">Civilingenjör i Medieteknik</a> på Linköpings Universitet. Jag har som mål i sommar att lära mig så mycket som möjligt om app- och webbutveckling. Nästa år kommer jag att studera mitt fjärde år på medieteknik i Sydkorea. <br><br> Kolla in min linkedin <a href="https://www.linkedin.com/in/sofiekhullar" target="_blank"><i class="fa fa-linkedin-square"></i></a> och kontakta mig gärna! </p>
+        </div>
+
+
+         <!--Projekt -->    
+        <div id="portfolio" class="container-fluid text-center block">
+            <h3>Projekt</h3>
+            <br>
+           <div class="rowbox row text-center">
+            <div class="box col-md-6"> 
+              <h4>Domescape <a href="https://github.com/Danielbook/3D_Projekt" target="_blank"><i class="fa fa-github"></i></a></h4>
+                <p class="text-left"> Projekt i kursen TNM061, 3D-grafik som är utvecklat med openGL och SGCT. Programmet räknar ut solens korrekta position reativt valda koordinater med hjälp av cspice. Ett enkelt landskap användes för att visa hur solens skuggor ändrades.</p>
+                
+            </div>
+
+            <div class="box col-md-6">
+                <h4>Fiketapp <a href="https://www.youtube.com/watch?v=hkOGjGt1bqU" target="_blank"><i class="fa fa-youtube-play"></i></a><a href="https://github.com/sofiekhullar/Fiketapp" target="_blank"> <i class="fa fa-github"></i></a></i></h4>
+                <p class="text-left">Android applikation utvecklad för univeristetets studentfik. Projektet gjordes i krursen TNM040, kommunikation och användargränssnitt.</p>
+            </div>
+
+      </div>
+            <div class="rowbox row">
+            <div class="box col-md-6">
+              <h4>Legodatabas <a href="http://www.student.itn.liu.se/~sofkh492/lego/" target="_blank"><i class="fa fa-home"></i></a> </h4>
+                <p class="text-left">Hemsida där mySQL användes för att söka olika legobitar en en databas. Hemsidan skapades i kursen Elektronisk publicering.</p><br>
+                </div>
+
+
+           <div class="box col-md-6"> 
+            <h4>Röstförvrängare i matlab <a href="https://github.com/sofiekhullar/ljudfysik" target="_blank"><i class="fa fa-github"></i></a></p></h4>
+            <p class="text-left">Ett projekt i kursen ljudfysik där matlab användes för att transformationer för att förvränga röster. Ett GUI skapades där olika "effekter" kunde väljas.</p><br></div>
+      </div>
+        </div>
+
+        
+
+         <!--Engagemang -->
+         <div id="commitments" class="container-fluid  block">
+            <h3 class="text-center" >Engagemang</h3>
+            <br>
+        <div class="row">
+        <div class="col-md-6">
+                <h3>Kassör i studentföreningen 3Cant 14/15</h3>
+                <p>Event så som vårbal, halloweenfest och sittning annornades.
+                <h3>Coderdojo coach</h3>
+                Programmerings coach för barn mellan 7-17 år. 
+        </div>
+        <div class="col-md-5">
+                <img src="3cants.jpg" class="img-responsive img-circle center-block" style="width:50%" alt="Image">
+                </div>
+            </div>
+
+        </div>
+
+         <!--Kontakt -->
+        <div id="contact" class="container-fluid text-center block">
+            <h3>Kontakt</h3>
+              <hr>
+            <p>Om du vill ha mitt cv som pdf är det bara att höra av sig till min mail <a href="mailto:sofie_k@live.se" target="_top"> <i class="fa fa-envelope"></i></a>. <br>Annars är det bara att kolla in min <a href="https://www.linkedin.com/in/sofiekhullar" target="_blank"><i class="fa fa-linkedin-square"></i></a> eller min <a href="https://github.com/sofiekhullar" target="_blank"><i class="fa fa-github"></i></a>. </p>
+            
+            <h1>VI HÖRS!</h1>
+            
+             
+        </div>
+      </div>
+
+        <footer class="container-fluid text-center">
+            <a href="#myPage" title="To Top">
+             <span class="glyphicon glyphicon-chevron-up"></span>
+             </a>
+             <p class="text-right"> © Sofie Khullar 2015</p> 
+        </footer>
+
+
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links in navbar + footer link
+          $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+           
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          });
+        })
+        </script>
+
+    
+    </div>
+</body>
+</html>                                		                                		
