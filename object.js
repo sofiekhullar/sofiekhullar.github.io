@@ -1,23 +1,44 @@
 			
+			// Settning up the secene
 			var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+
 			var clock = new THREE.Clock();
     		var time = 0;
     		var fallingHor = true;
-
     		var N = 100;
 			var posY = calculate();  
 			var t = createTime(N);   // FULKOD?!?!?
 			var counter = 0;
+			var glitter = [];
+			var max_of_glitter = 5;
 
 			var renderer = new THREE.WebGLRenderer();
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
 			
 			var geometry = new THREE.BoxGeometry( 1, 0.1, 1 );
-			var material = new THREE.MeshBasicMaterial( { color: 0xFF33FF } );
+			
+			//var material = new THREE.MeshBasicMaterial( { color: 0xFF33FF } );
+			var material = new THREE.MeshPhongMaterial( { color: 0x545454, specular: 0xffffff, shininess: 100, shading: THREE.FlatShading } );
 			var cube = new THREE.Mesh( geometry, material );
 			cube.position.y = 3;
+
+			//Lägga till ljus
+			var light = new THREE.SpotLight(0xFFFFFF, 5); //Vitt ljus och intensitet (jättestarkt!).
+	      	light.position.set( 50, 100, 50 );
+	      	scene.add(light);
+	      	light.castShadow = true;
+			
+			//Create glitter and store in array
+			var geo = new THREE.BoxGeometry( 1, 0.1, 1 );
+			   for (var i = 0; i < max_of_glitter; i++) {
+				        var box = {};
+				        var mat = new THREE.MeshBasicMaterial({color: Math.floor(Math.random() * 0x1000000)});
+				        box.obj = new THREE.Mesh( geo, mat);
+				    };
+
+
 			
 			if(fallingHor){
 				cube.rotation.x = Math.PI /2;
